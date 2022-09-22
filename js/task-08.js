@@ -8,6 +8,9 @@ function OnSubmit(evt) {
         email: email.value,
         password: password.value
      }
+    if (email.value.trim() === "" || password.value.trim() === "") {
+    alert("Ви не заповнили всі поля!");
+  }
     console.log(data);
     evt.currentTarget.reset();
 }
